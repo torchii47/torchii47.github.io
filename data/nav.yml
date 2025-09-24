@@ -1,0 +1,16 @@
+primary:
+  - title: Computer Science
+    url: /cs/
+  - title: Creative iMedia
+    url: /imedia/
+  - title: KS3
+    url: /ks3/
+
+
+footer:
+  - title: About
+    url: /about/
+  - title: Accessibility
+    url: /accessibility/
+  - title: Privacy
+    url: /privacy/
