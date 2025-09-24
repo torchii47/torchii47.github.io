@@ -1,0 +1,10 @@
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="y">{{ "now" | date: "%Y" }}</span> Rowan Ainsbury — ainsbury.art</span>
+    <span>
+      {% for item in site.data.nav.footer %}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% unless forloop.last %} · {% endunless %}
+      {% endfor %}
+    </span>
+  </div>
+</footer>
