@@ -1,0 +1,16 @@
+<header>
+  <div class="wrap" role="navigation" aria-label="Primary">
+    <div class="brand" aria-label="Site identity">
+      <div class="logo" aria-hidden="true">RA</div>
+      <div>
+        <strong>Ainsbury.art</strong><br />
+        <small>Computer Science & Creative iMedia</small>
+      </div>
+    </div>
+    <nav>
+      {% for item in site.data.nav.primary %}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
