@@ -1,0 +1,14 @@
+title: "Ainsbury.art — Computer Science & Creative iMedia"
+description: "Resources for students: lessons, revision, assignments, briefs, and example work."
+url: "https://ainsbury.art"
+baseurl: ""
+timezone: Europe/London
+
+markdown: kramdown
+theme: null
+plugins: []   # keep empty for GitHub Pages compatibility
+permalink: pretty
+
+# Expose nav items from _data/nav.yml
+collections:
+  # (Optional) later you can add collections like 'briefs:' if you want auto-generated lists
