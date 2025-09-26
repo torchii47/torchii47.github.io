@@ -1,7 +1,15 @@
 ---
 layout: default
-title: Ainsbury.art — Computer Science & Creative iMedia Resources
+title: Home
+description: Resources for KS3 Computer Science and Creative iMedia.
 ---
+
+<p class="lead">Quick links:</p>
+<ul class="card-grid" style="list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;">
+  <li class="card" style="border:1px solid #e5e5e5;border-radius:14px;padding:1rem;"><a href="/ks3/">KS3 Resources</a></li>
+  <li class="card" style="border:1px solid #e5e5e5;border-radius:14px;padding:1rem;"><a href="/cs/">Computer Science</a></li>
+  <li class="card" style="border:1px solid #e5e5e5;border-radius:14px;padding:1rem;"><a href="/imedia/">Creative iMedia</a></li>
+</ul>
 
 <section class="hero" aria-labelledby="welcome">
   <h1 id="welcome">Welcome — your hub for lessons, tasks, and revision</h1>
