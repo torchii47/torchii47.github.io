@@ -1,52 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-  {% include head.html %}
-  {% assign page_title = page.title | default: site.title | default: "ainsbury.art" %}
-  {% assign page_desc  = page.description | default: site.description | default: "Resources for Computer Science & Creative iMedia." %}
-  <title>{{ page_title }}</title>
-  <meta name="description" content="{{ page_desc }}">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ page_title }}">
-  <meta property="og:description" content="{{ page_desc }}">
-  <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-  <meta property="og:image" content="{{ site.url }}/assets/og-default.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-  <link rel="icon" href="/assets/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
   <link rel="stylesheet" href="/assets/css/site.css">
-
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<nav class="site-nav">
-  <a class="brand" href="/">ainsbury.art</a>
-  <ul>
-    <li><a href="/ks3/">KS3</a></li>
-    <li><a href="/cs/">Computer Science</a></li>
-    <li><a href="/imedia/">Creative iMedia</a></li>
-  </ul>
-</nav>
 
-<a class="sr-only" href="#main">Skip to content</a>
-{% include header.html %}
+  {% include nav.html %}
 
-<main id="main" class="wrap" role="main">
-  {{ content }}
-</main>
+  <main id="main" role="main">
+    {{ content }}
+  </main>
 
-{% include footer.html %}
-<footer class="site-footer">
-  <div class="inner" style="max-width:var(--maxw);margin:2rem auto;padding:0 1rem;border-top:1px solid #e5e5e5;">
-    <p>© {{ site.time | date: "%Y" }} Rowan Ainsbury •
-       <a href="https://github.com/torchii47/torchii47.github.io">View on GitHub</a> •
-       Last updated: {{ site.time | date: "%d %b %Y" }}
-    </p>
-  </div>
-</footer>
+  <footer class="site-footer">
+    <div class="inner">
+      <p>© {{ site.time | date: "%Y" }} Rowan Ainsbury •
+        <a href="https://github.com/torchii47/torchii47.github.io">Edit on GitHub</a> •
+        Last updated: {{ site.time | date: "%d %b %Y" }}
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
-
-
-
