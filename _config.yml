@@ -5,6 +5,7 @@ baseurl: ""
 timezone: Europe/London
 
 markdown: kramdown
+highlighter: rouge
 theme: null
 plugins: []   # keep empty for GitHub Pages compatibility
 permalink: pretty
@@ -12,3 +13,4 @@ permalink: pretty
 # Expose nav items from _data/nav.yml
 collections:
   # (Optional) later you can add collections like 'briefs:' if you want auto-generated lists
+
