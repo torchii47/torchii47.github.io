@@ -2,6 +2,20 @@
 <html lang="en">
 <head>
   {% include head.html %}
+  {% assign page_title = page.title | default: site.title | default: "ainsbury.art" %}
+  {% assign page_desc  = page.description | default: site.description | default: "Resources for Computer Science & Creative iMedia." %}
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_desc }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_desc }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <meta property="og:image" content="{{ site.url }}/assets/og-default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <link rel="icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/assets/css/site.css">
+
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -24,4 +38,5 @@
 {% include footer.html %}
 </body>
 </html>
+
 
