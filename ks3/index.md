@@ -1,26 +1,13 @@
 ---
 layout: default
 title: KS3 Resources
+description: Year 7–9 projects, homework and assessments.
 ---
 
 # KS3 Resources
 
 <ul class="card-grid">
-{% assign pages = site.pages | where_exp: "p","p.path contains 'ks3/'" | sort: "title" %}
-{% for p in pages %}
-  {% if p.url != '/ks3/' %}
-    <li class="card"><a href="{{ p.url }}">{{ p.title }}</a></li>
-  {% endif %}
-{% endfor %}
+  <li class="card"><a href="/ks3/year7/">Year 7</a></li>
+  <li class="card"><a href="/ks3/year8/">Year 8</a></li>
+  <li class="card"><a href="/ks3/year9/">Year 9</a></li>
 </ul>
-
-{% comment %} Optional: auto-list PDFs in /ks3/ {% endcomment %}
-{% assign pdfs = site.static_files | where_exp: "f","f.path contains '/ks3/' and f.extname == '.pdf'" %}
-{% if pdfs.size > 0 %}
-<h2>Downloads</h2>
-<ul>
-  {% for f in pdfs %}
-    <li><a href="{{ f.path }}">{{ f.name }}</a></li>
-  {% endfor %}
-</ul>
-{% endif %}
