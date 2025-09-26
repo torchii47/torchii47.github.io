@@ -14,3 +14,6 @@ permalink: pretty
 collections:
   # (Optional) later you can add collections like 'briefs:' if you want auto-generated lists
 
+plugins:
+  - jekyll-sitemap
+
