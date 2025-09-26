@@ -1,19 +1,12 @@
-title: "Ainsbury.art — Computer Science & Creative iMedia"
-description: "Resources for students: lessons, revision, assignments, briefs, and example work."
-url: "https://ainsbury.art"
-baseurl: ""
-timezone: Europe/London
+title: ainsbury.art
+description: Resources for Computer Science & Creative iMedia
+url: "https://ainsbury.art"   # you have a CNAME -> use your custom domain
+baseurl: ""                   # leave empty for root site
 
 markdown: kramdown
 highlighter: rouge
-theme: null
-plugins: []   # keep empty for GitHub Pages compatibility
-permalink: pretty
 
-# Expose nav items from _data/nav.yml
-collections:
-  # (Optional) later you can add collections like 'briefs:' if you want auto-generated lists
-
+# GitHub Pages–safe plugins
 plugins:
+  - jekyll-seo-tag
   - jekyll-sitemap
-
